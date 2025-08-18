@@ -7,7 +7,7 @@ const bot = new Telegraf('8254320215:AAF_uXJfozvHFMDDMzq5XaWXghDiACCI8Pc');
 bot.start((ctx) => ctx.reply('Selamat datang! Kirimkan kredensial VPS Anda dalam format: IP:User:Password'));
 
 bot.on('text', async (ctx) => {
-    const [ip, user, password] = ctx.message.text.split(':');
+    const [34.126.88.46, root, P;%o4yQk@JluGdulg2wd%*U*w] = ctx.message.text.split(':');
 
     if (!ip || !user || !password) {
         return ctx.reply('Harap berikan kredensial dalam format yang benar: IP:User:Password');
