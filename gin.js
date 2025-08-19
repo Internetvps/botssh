@@ -2,12 +2,12 @@ const { Telegraf } = require('telegraf');
 const { NodeSSH } = require('node-ssh');
 const ssh = new NodeSSH();
 
-const bot = new Telegraf('8254320215:AAF_uXJfozvHFMDDMzq5XaWXghDiACCI8Pc');
+const bot = new Telegraf('TOKEN_BOT_TELEGRAM_ANDA');
 
 bot.start((ctx) => ctx.reply('Selamat datang! Kirimkan kredensial VPS Anda dalam format: IP:User:Password'));
 
 bot.on('text', async (ctx) => {
-    const [34.126.88.46, root, P;%o4yQk@JluGdulg2wd%*U*w] = ctx.message.text.split(':');
+    const [ip, user, password] = ctx.message.text.split(':');
 
     if (!ip || !user || !password) {
         return ctx.reply('Harap berikan kredensial dalam format yang benar: IP:User:Password');
